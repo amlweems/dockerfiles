@@ -1,0 +1,8 @@
+extends: existence
+message: Define impact assets
+level: error
+ignorecase: true
+nonword: true
+scope: heading
+tokens:
+    - '\w+/\w+ Impacted'

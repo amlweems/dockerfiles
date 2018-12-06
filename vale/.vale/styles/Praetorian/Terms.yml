@@ -1,0 +1,36 @@
+---
+extends: substitution
+message: Consider using '%s' instead of '%s'
+level: warning
+ignorecase: true
+swap:
+  man in the middle: man-in-the-middle
+  bruteforce: brute-force
+  serverside: server-side
+  clientside: client-side
+  cross site: cross-site
+  defense in depth: defense-in-depth
+  poc: proof-of-concept
+  'Mac ?OS ?X': macOS
+  'node[.]?js': Node.js
+  'Post?gr?e(?:SQL)': PostgreSQL
+  'java[ -]?script': JavaScript
+  'docker ?hub': Docker Hub
+  mongodb: MongoDB
+  java: Java
+  python: Python
+  centOS: CentOS
+  debian: Debian
+  fedora: Fedora
+  gentoo: Gentoo
+  homebrew: Homebrew
+  macOS: macOS
+  ubuntu: Ubuntu
+  wordpress: WordPress
+  github: GitHub
+  cloudflare: CloudFlare
+  yaml: YAML
+  urls: URLs
+  uris: URIs
+  excel: Excel
+  mitm: MITM

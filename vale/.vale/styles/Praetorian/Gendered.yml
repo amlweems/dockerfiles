@@ -1,0 +1,10 @@
+extends: existence
+message: "Use they/their/them instead of '%s'"
+ignorecase: true
+level: error
+tokens:
+  - he
+  - hers?
+  - him
+  - his
+  - she

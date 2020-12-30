@@ -1,10 +1,10 @@
 FROM openjdk:10
 LABEL maintainer "Anthony Weems <amlweems@gmail.com>"
 
-ENV VERSION 0.149
-ENV SHASUM db683b5b3bc2c20fd2fabcc9d749d5b8bcbba736f334e5ac2092173242967aca
+ENV VERSION 0.150
+ENV SHASUM d2755995ba1f3994d71d1905544b250c49ac6529433eb4383923430b6f109826
 
-RUN wget -q -O /opt/cfr.jar "https://www.benf.org/other/cfr/cfr-${VERSION}.jar" \
+RUN wget -q -O /opt/cfr.jar "https://github.com/leibnitz27/cfr/releases/download/${VERSION}/cfr-${VERSION}.jar" \
  && echo "${SHASUM}  /opt/cfr.jar" | shasum -a 256 -c -
 
 ENTRYPOINT ["java", "-jar", "/opt/cfr.jar"]

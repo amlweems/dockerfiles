@@ -1,6 +1,6 @@
 FROM python:3
 
-RUN git clone -q --branch 5.8.0 https://github.com/nccgroup/ScoutSuite /usr/src/app
+RUN git clone -q --branch 5.10.2 https://github.com/nccgroup/ScoutSuite /usr/src/app
 WORKDIR /usr/src/app
 RUN pip install -r requirements.txt \
  && python scout.py -v
